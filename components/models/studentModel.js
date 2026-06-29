@@ -11,6 +11,11 @@ const studentData=mongoose.Schema({
         required:true,
         trim:true
     },
+    email:{
+        type:String,
+        required:true,
+        unique:true
+    },
     studentId:{
         type:String,
         required:true,
